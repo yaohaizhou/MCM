@@ -22,3 +22,5 @@
 *.xdv
 *.fdb_latexmk
 *.pdf
+
+!figures/*.pdf
