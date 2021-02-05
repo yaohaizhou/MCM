@@ -24,3 +24,4 @@
 *.pdf
 
 !figures/*.pdf
+!mcmthesis-manual.pdf
