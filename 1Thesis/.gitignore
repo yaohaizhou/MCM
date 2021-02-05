@@ -22,6 +22,3 @@
 *.xdv
 *.fdb_latexmk
 *.pdf
-
-!figures/*.pdf
-!mcmthesis-manual.pdf
