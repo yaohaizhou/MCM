@@ -1,6 +1,7 @@
 #  亚洲胡蜂(Asian Giant Hornet, AGH)资料搜集/总结
 
-## 1 C题官方参考文档
+---
+## 1 C题官方参考文档(UPDATED: MAY 6, 2020)
 
 ### 分布
 1. 原本生活在东亚的**温带**和**热带**地区
@@ -37,3 +38,15 @@
     - exposed aerial nests, on tree limbs & house eaves
 
 #### 生命周期
+- annual species, 每年都建造新巢穴
+1. 冬天到来，除了冬眠的蜂后(overwintering queen)，蜂巢内胡蜂全部死亡
+2. 蜂后春天苏醒，建造蜂巢生产工蜂，到8月份左右蜂巢完全成熟，工蜂可达100只
+3. 9月份产生雄蜂，10、11月份配种后离巢
+
+#### 影响
+1. 8月份开始觅食蜜蜂，9、10月份影响最严重
+2. 亚洲胡蜂觅食时，一般飞离巢穴:
+    - only 0.5–1.25 miles (1–2 km) on average
+    - never more than 5 miles (8 km))
+3. 胡蜂巢穴周边0.5英里(1km)以内的蜜蜂群落受损最为严重
+4. 活动范围：**do not occur in Pennsylvania or eastern North America more generally**
