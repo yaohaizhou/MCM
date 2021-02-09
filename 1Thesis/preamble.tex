@@ -1,0 +1,75 @@
+\usepackage{newtxtext}%\usepackage{palatino}
+\usepackage{indentfirst} % first line indent
+\def\figureautorefname{Fig.}
+
+%-----------toc specification------------------
+\usepackage[nottoc]{tocbibind} % add ref to toc
+\setcounter{tocdepth}{2}
+\usepackage{setspace}
+
+%-----------float specification------------------
+\usepackage{float}
+\usepackage[
+    font=small, %
+    labelfont=bf, %
+    textfont=normalfont, %
+    labelformat=simple, %
+    labelsep=period %
+]{caption}
+\usepackage[
+    font=small, %
+    labelfont=normalfont, %
+    textfont=normalfont, %
+    labelformat=parens, %
+    labelsep=space %
+]{subcaption}
+
+%------------algo envronment-----------------------
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm
+\makeatletter
+\newenvironment{breakablealgorithm}
+  {% \begin{breakablealgorithm}
+   \begin{center}
+     \refstepcounter{algorithm}% New algorithm
+     \hrule height.8pt depth0pt \kern2pt% \@fs@pre for \@fs@ruled
+     \renewcommand{\caption}[2][\relax]{% Make a new \caption
+       {\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+       \ifx\relax##1\relax % #1 is \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+       \else % #1 is not \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+       \fi
+       \kern2pt\hrule\kern2pt
+     }
+  }{% \end{breakablealgorithm}
+     \kern2pt\hrule\relax% \@fs@post for \@fs@ruled
+   \end{center}
+  }
+\makeatother
+
+%-----------lstlisting settings--------------------
+\lstset{breaklines =true}
+\lstloadlanguages{Python}
+
+%-----------User-defined Macros--------------------
+\def\TeamNumber{2112243}
+\def\Problem{C}
+\def\AGH{Asian Giant Hornet}
+\def\VM{Vespa mandarinia}
+\def\vm{Vespa mandarinia}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+%-----------MCM Template options-------------------
+\mcmsetup{
+    CTeX = true, % 写中文文档时，设置为 true
+    tcn = \TeamNumber,
+    problem = \Problem,
+    sheet = true,
+    titleinsheet = true,
+    abstract = true,
+    keywordsinsheet = true,
+    titlepage = false % 去掉重复的summary page
+}
